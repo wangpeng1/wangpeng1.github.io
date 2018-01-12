@@ -1,0 +1,173 @@
+﻿suhttp://ahogrammer.com/2016/11/15/deep-learning-enables-you-to-hide-screen-when-your-boss-is-approaching/
+
+http://prm.goertek.com:8080/prm  工作日志
+https://developer.android.com/guide/topics/media/media-formats.html
+
+Qq3323297  http://www.hnrcsc.com/hnrsdl/
+
+adb logcat -d > logcat.txt
+
+adb shell am start -n com.goertek.chenxing/com.goertek.chenxing.ChenxingUnityPlayerActivity 
+
+adb shell am start -n com.android.launcher3/com.android.launcher3.Launcher
+
+adb shell am start -n com.goertek.testapp/.TestMainActivity
+
+Git操作
+git status
+git add /e/sarah/wilbur.txt
+scp -p -P 29418 wilbur.wang@10.10.0.200:hooks/commit-msg .git/hooks/
+git commit -m "test wilbur"
+git push ssh://wilbur.wang@10.10.0.200:29418/Meta4/VR-Apps/VrLauncher HEAD:refs/for/master
+
+
+git rm --f
+/e/VrLauncher/VrLauncher_Unity/Assets/Chenxing-TestMode/Scenes/25SettingMenu
+
+
+http://10.10.0.200:9999/#/dashboard/self
+git clone ssh://wilbur.wang@10.10.0.200:29418/MirageAIO/VR-APP/VRLauncher
+
+产线测试命令
+adb wait-for-device && adb root &&adb wait-for-device && adb shell "echo "ffbm-01\c">/dev/block/bootdevice/by-name/misc" && adb reboot
+echo "normal\c">/dev/block/bootdevice/by-name/misc
+echo "ffbm-01\c">/dev/block/bootdevice/by-name/misc
+sleep 10 && reboot -p &
+logcat | grep ensor
+
+
+su
+cd cache
+cd recovery
+cat last_log
+
+开启反畸变算法步骤：
+adb shell setprop persist.camera.preview.ubwc 0
+adb shell setprop debug.camera.distortion 1
+
+ 
+git
+电量 dumpsys battery
+ 按键getevent  -rtl
+
+msm8996:/ # getprop ro.gtk.version
+V7.01.01_Daily_20170315
+
+/data/misc/qvr/
+
+jar -cvf xx.jar *.* 
+
+http://www.cnblogs.com/zyanrong/p/5417535.html  monkey
+adb shell monkey -p com.goertek.chenxing -v -v -v 200 -s 300 >D:\monkeylog.txt
+adb shell monkey -p com.goertek.chenxing -s 500 --throttle 70  --pct-touch 100 --ignore-crashes --ignore-timeouts --monitor-native-crashes -v -v -v 5000 > E:\chenxing_monkey_log.txt
+
+
+
+
+
+C:\Users\wilbur.wang>adb root
+adbd is already running as root
+
+C:\Users\wilbur.wang>adb remount
+remount succeeded
+
+C:\Users\wilbur.wang>adb  push D:\wilbur.wang\桌面\oculus.mp4  /sdcard
+
+
+http://10.10.0.88:8081/browse/CHEN-1141?filter=-1  jira
+
+
+
+http://10.10.0.39/portal.php?mod=list&catid=4 专利
+
+http://www.yiibai.com/scala/scala_basic_syntax.html
+
+FlatBuffers
+
+amaba 1234567890
+
+http://www.jianshu.com/p/32e895a940a2
+
+
+com.goertek.gvrsdktemplete
+
+1.  Bugzilla使用权限已开通，网址http://bugzilla.goertek.com:2241/，
+登录账户  wilbur.wang@goertek.com，初始密码1512414可自行更改密码,
+2.  已为你添加ChenXing项目的使用权限，
+
+
+
+https://www.slideshare.net/tw_dsconf/dsc-2016-spark?qid=842234e3-4696-4f34-a441-6891bedd90a1&v=&b=&from_search=19
+
+
+
+
+
+rena.gao
+hg123.HG
+
+private static final String FTP_HOST="qdrdftp.goertek.com";
+ private static final String FTP_USER="qc.fade";
+    private static final String FTP_PASS="2n61N6Dv";
+    public static String MIRROR_LOCAL_PATH="/data/media/0/";
+    public static final String FTP_LOCAL_PATH="/sdcard/";
+
+\\192.168.74.56\day_version_new\chenxing_20170713\chenxing_user_2017071300\msm8996-ota20170713
+
+conda 
+https://www.tensorflow.org/install/install_mac
+
+https://github.com/conda-forgge/keras-feedstock
+Installing keras
+
+Installing keras from the conda-forge channel can be achieved by adding conda-forge to your channels with:
+
+conda config --add channels conda-forge
+
+Once the conda-forge channel has been enabled, keras can be installed with:
+git
+conda install keras
+
+It is possible to list all of the versions of keras available on your platform with:
+
+conda search keras --channel conda-forge
+
+conda create -n tensorflow python=3.5 
+activate tensorflow
+ deactivate 
+
+Jupyter Notebook
+rm -r ~/tensorflow 
+pip3 uninstall tensorflow 
+
+安装或更新包http://blog.sina.com.cn/s/blog_c3c116470102wlv5.html
+conda install numpy=1.9.3
+conda update numpy=1.93
+每次更新一个东西，conda总是同时更新和它有关联的一大堆包，可以在update后面加上--no-update-dependencies来让conda不要更新关联的东西。然而好像并没有什么用，conda还是会检查，真的要更新的他还是会更新的。于是用它更新后安装目录越来越大。
+conda update matplotlib --no-update-dependencies
+conda update matplotlib --update-dependencies
+指定包的来源
+1.要配置conda文件，没看懂http://conda.pydata.org/docs/config.html#channel-locations-channels
+2.还可以conda updae --channel https://..... matplotlib 来指定从哪里下载。
+3.或者conda install -c spyder-ide spyder=3.0.0加一个-c表示从http://anaconda.org下载资源包，
+
+
+1287
+get@psiphon3.com
+
+球http://blog.csdn.net/nanggong/article/details/54694102
+
+keras 换肤，减少资源 ;解锁 图片应用;
+
+专利
+http://warmspringwinds.github.io/tensorflow/tf-slim/2017/01/23/fully-convolutional-networks-(fcns)-for-image-segmentation/
+http://avisynth.nl/index.php/Resampling
+
+Dotween
+http://dotween.demigiant.com/download.php
+http://www.xuanyusong.com/archives/3330
+http://blog.csdn.net/likendsl/article/details/50887689
+http://blog.csdn.net/ldy597321444/article/details/51853256
+ScrollRect
+
+
