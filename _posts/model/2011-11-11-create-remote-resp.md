@@ -1,8 +1,8 @@
 ---
 layout: post
 title: git创建远程库
-category: 工具
-tags: Git
+category: TEMPLATE
+tags: template
 description: git创建远程库
 ---
 

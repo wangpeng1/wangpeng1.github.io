@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 微软 Openhack 2015
-category: 生活
-tags: Essay
+category: TEMPLATE
+tags: template
 keywords: 
 ---
 
