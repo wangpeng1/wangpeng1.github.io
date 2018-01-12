@@ -1,6 +1,6 @@
 # Site settings
 title: 王鹏的博客
-email: suyan0830@gmail.com
+email: wangpeng1@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   王鹏的博客
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -18,8 +18,8 @@ github: wangpeng1
 
 
 # avatar and Favicon
-avatar: http://7u2ho6.com1.z0.glb.clouddn.com/site-avatar.png
-favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
+avatar:assets/img/qrcode.jpg
+favicon: assets/img/qrcode.jpg
 
 # disqus config
 disqus:
