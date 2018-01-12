@@ -7,8 +7,8 @@ description: 用来收集python常用的方法
 ---
 
 1. 指定行和列，这里0是列
->>> b = np.arange(12).reshape(3,4)
->>> b
+#>>> b = np.arange(12).reshape(3,4)
+#>>> b
 array([[ 0,  1,  2,  3],
        [ 4,  5,  6,  7],
        [ 8,  9, 10, 11]])
