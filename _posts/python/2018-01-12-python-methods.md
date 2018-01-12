@@ -6,87 +6,88 @@ tags: python
 description: 用来收集python常用的方法
 ---
 
+```python
 1. 指定行和列，这里0是列
- b = np.arange(12).reshape(3,4)
- b
+>>> b = np.arange(12).reshape(3,4)
+>>> b
 array([[ 0,  1,  2,  3],
        [ 4,  5,  6,  7],
        [ 8,  9, 10, 11]])
-
- b.sum(axis=0)                            # sum of each column
+>>>
+>>> b.sum(axis=0)                            # sum of each column
 array([12, 15, 18, 21])
-
- b.min(axis=1)                            # min of each row
+>>>
+>>> b.min(axis=1)                            # min of each row
 array([0, 4, 8])
-
- b.cumsum(axis=1)                         # cumulative sum along each row
+>>>
+>>> b.cumsum(axis=1)                         # cumulative sum along each row
 array([[ 0,  1,  3,  6],
        [ 4,  9, 15, 22],
        [ 8, 17, 27, 38]])
 
 2. 返回相关索引，有重复的返回第一个
- a = np.arange(6).reshape(2,3)
- a
+>>> a = np.arange(6).reshape(2,3)
+>>> a
 array([[0, 1, 2],
        [3, 4, 5]])
- np.argmax(a)
+>>> np.argmax(a)
 5
-np.argmax(a, axis=0)
+>>> np.argmax(a, axis=0)
 array([1, 1, 1])
- np.argmax(a, axis=1)
+>>> np.argmax(a, axis=1)
 array([2, 2])
-
- b = np.arange(6)
-b[1] = 5
- b
+>>>
+>>> b = np.arange(6)
+>>> b[1] = 5
+>>> b
 array([0, 5, 2, 3, 4, 5])
-np.argmax(b) # Only the first occurrence is returned.
+>>> np.argmax(b) # Only the first occurrence is returned.
 1
 
 3.传入方法根据方法进行操作
- def my_func(a):
+>>> def my_func(a):
 ...     """Average first and last element of a 1-D array"""
 ...     return (a[0] + a[-1]) * 0.5
- b = np.array([[1,2,3], [4,5,6], [7,8,9]])
- np.apply_along_axis(my_func, 0, b)
+>>> b = np.array([[1,2,3], [4,5,6], [7,8,9]])
+>>> np.apply_along_axis(my_func, 0, b)
 array([ 4.,  5.,  6.])
- np.apply_along_axis(my_func, 1, b)
+>>> np.apply_along_axis(my_func, 1, b)
 array([ 2.,  5.,  8.])
 
- b = np.array([[8,1,7], [4,3,9], [5,2,6]])
- np.apply_along_axis(sorted, 1, b)
+>>> b = np.array([[8,1,7], [4,3,9], [5,2,6]])
+>>> np.apply_along_axis(sorted, 1, b)
 array([[1, 7, 8],
        [3, 4, 9],
        [2, 5, 6]])
 
 4. 传入方法操作 这里1是列 0是行
- def f(x,y):
+>>> def f(x,y):
 ...     return 10*x+y
 ...
- b = np.fromfunction(f,(5,4),dtype=int)
- b
+>>> b = np.fromfunction(f,(5,4),dtype=int)
+>>> b
 array([[ 0,  1,  2,  3],
        [10, 11, 12, 13],
        [20, 21, 22, 23],
        [30, 31, 32, 33],
        [40, 41, 42, 43]])
-b[2,3]
+>>> b[2,3]
 23
- b[0:5, 1]                       # each row in the second column of b
+>>> b[0:5, 1]                       # each row in the second column of b
 array([ 1, 11, 21, 31, 41])
- b[ : ,1]                        # equivalent to the previous example
+>>> b[ : ,1]                        # equivalent to the previous example
 array([ 1, 11, 21, 31, 41])
- b[1:3, : ]                      # each column in the second and third row of b
+>>> b[1:3, : ]                      # each column in the second and third row of b
 array([[10, 11, 12, 13],
        [20, 21, 22, 23]])
 
- b[-1]                                  # the last row. Equivalent to b[-1,:]
+>>> b[-1]                                  # the last row. Equivalent to b[-1,:]
 array([40, 41, 42, 43])
 
 terating over multidimensional arrays is done with respect to the first axis:
 
-
- for row in b:
+>>>
+>>> for row in b:
 ...     print(row)
 ...
 [0 1 2 3]
@@ -96,11 +97,11 @@ terating over multidimensional arrays is done with respect to the first axis:
 [40 41 42 43]
 However, if one wants to perform an operation on each element in the array, one can use the flat attribute which is an iterator over all the elements of the array:
 
-
- for element in b.flat:
+>>>
+>>> for element in b.flat:
 ...     print(element)
 
- y = np.arange(35).reshape(5,7)
+>>> y = np.arange(35).reshape(5,7)
 y = np.arange(35).reshape(5,7)
 
 y
@@ -115,93 +116,93 @@ array([[ 7, 10, 13],
        [21, 24, 27]])
 
 5. 矩阵变化
- a = np.floor(10*np.random.random((3,4)))
- a
+   >>> a = np.floor(10*np.random.random((3,4)))
+>>> a
 array([[ 2.,  8.,  0.,  6.],
        [ 4.,  5.,  1.,  1.],
        [ 8.,  9.,  3.,  6.]])
- a.shape
+>>> a.shape
 (3, 4)
 
- a.ravel()  # returns the array, flattened
+>>> a.ravel()  # returns the array, flattened
 array([ 2.,  8.,  0.,  6.,  4.,  5.,  1.,  1.,  8.,  9.,  3.,  6.])
- a.reshape(6,2)  # returns the array with a modified shape
+>>> a.reshape(6,2)  # returns the array with a modified shape
 
- a.resize((2,6))
- a
+>>> a.resize((2,6))
+>>> a
 array([[ 2.,  8.,  0.,  6.,  4.,  5.],
        [ 1.,  1.,  8.,  9.,  3.,  6.]])
 
 If a dimension is given as -1 in a reshaping operation, the other dimensions are automatically calculated:
 
-
- a.reshape(3,-1)
+>>>
+>>> a.reshape(3,-1)
 array([[ 2.,  8.,  0.,  6.],
        [ 4.,  5.,  1.,  1.],
        [ 8.,  9.,  3.,  6.]])
 6.水平竖直拼接
- a = np.floor(10*np.random.random((2,2)))
- a
+>>> a = np.floor(10*np.random.random((2,2)))
+>>> a
 array([[ 8.,  8.],
        [ 0.,  0.]])
- b = np.floor(10*np.random.random((2,2)))
- b
+>>> b = np.floor(10*np.random.random((2,2)))
+>>> b
 array([[ 1.,  8.],
        [ 0.,  4.]])
- np.vstack((a,b))
+>>> np.vstack((a,b))
 array([[ 8.,  8.],
        [ 0.,  0.],
        [ 1.,  8.],
        [ 0.,  4.]])
- np.hstack((a,b))
+>>> np.hstack((a,b))
 array([[ 8.,  8.,  1.,  8.],
        [ 0.,  0.,  0.,  4.]])
- np.column_stack((a,b))   # With 2D arrays 水平拼接
+>>> np.column_stack((a,b))   # With 2D arrays 水平拼接
 array([[ 8.,  8.,  1.,  8.],
        [ 0.,  0.,  0.,  4.]])
 
- a = np.array([4.,2.])
- b = np.array([2.,8.])
- a[:,newaxis]  # This allows to have a 2D columns vector
+>>> a = np.array([4.,2.])
+>>> b = np.array([2.,8.])
+>>> a[:,newaxis]  # This allows to have a 2D columns vector
 array([[ 4.],
        [ 2.]]) 打散
 
 
 7. 构造 0 1矩阵，重构0 1矩阵
 https://docs.scipy.org/doc/numpy-dev/reference/generated/numpy.zeros_like.html#numpy.zeros_like
- np.zeros(5)
+>>> np.zeros(5)
 array([ 0.,  0.,  0.,  0.,  0.])
- s = (2,2)
- np.zeros(s)
+>>> s = (2,2)
+>>> np.zeros(s)
 array([[ 0.,  0.],
        [ 0.,  0.]])
 
- x = np.arange(6)
- x = x.reshape((2, 3))
-x
+>>> x = np.arange(6)
+>>> x = x.reshape((2, 3))
+>>> x
 array([[0, 1, 2],
        [3, 4, 5]])
- np.zeros_like(x)
+>>> np.zeros_like(x)
 array([[0, 0, 0],
        [0, 0, 0]])
 
 
 8. 等距离分割
 logspace
- np.linspace(2.0, 3.0, num=5)
+>>> np.linspace(2.0, 3.0, num=5)
 array([ 2.  ,  2.25,  2.5 ,  2.75,  3.  ])
- np.linspace(2.0, 3.0, num=5, endpoint=False)
+>>> np.linspace(2.0, 3.0, num=5, endpoint=False)
 array([ 2. ,  2.2,  2.4,  2.6,  2.8])
- np.linspace(2.0, 3.0, num=5, retstep=True)
+>>> np.linspace(2.0, 3.0, num=5, retstep=True)
 (array([ 2.  ,  2.25,  2.5 ,  2.75,  3.  ]), 0.25)
 
 9.从数组取值
- np.fromfunction(lambda i, j: i == j, (3, 3), dtype=int)
+>>> np.fromfunction(lambda i, j: i == j, (3, 3), dtype=int)
 array([[ True, False, False],
        [False,  True, False],
        [False, False,  True]], dtype=bool)
-
- np.fromfunction(lambda i, j: i + j, (3, 3), dtype=int)
+>>>
+>>> np.fromfunction(lambda i, j: i + j, (3, 3), dtype=int)
 array([[0, 1, 2],
        [1, 2, 3],
        [2, 3, 4]])
@@ -240,9 +241,9 @@ np.mgrid[-1:1:5j]
 array([-1. , -0.5,  0. ,  0.5,  1. ])
 
 11 统计每个数出现的次数
- np.bincount(np.arange(5))
+>>> np.bincount(np.arange(5))
 array([1, 1, 1, 1, 1])
- np.bincount(np.array([0, 1, 1, 3, 2, 1, 7]))
+>>> np.bincount(np.array([0, 1, 1, 3, 2, 1, 7]))
 array([1, 3, 1, 1, 0, 0, 0, 1])
 
 x = np.array([0, 1, 1, 3, 2, 1, 7, 23])
@@ -257,32 +258,32 @@ np.amax(x)+1
 Out[34]: 24
 
 
- w = np.array([0.3, 0.5, 0.2, 0.7, 1., -0.6]) # weights
- x = np.array([0, 1, 1, 2, 2, 2])
- np.bincount(x,  weights=w)
+>>> w = np.array([0.3, 0.5, 0.2, 0.7, 1., -0.6]) # weights
+>>> x = np.array([0, 1, 1, 2, 2, 2])
+>>> np.bincount(x,  weights=w)
 array([ 0.3,  0.7,  1.1])
 根据权重所在数每个家0.7=0.5+0.2  1.1=0.7+1-0.6
 out[n] += weight[i] instead of out[n] += 1.
 
 12  取接近的数
- a = np.array([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0])
- np.ceil(a)
+>>> a = np.array([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0])
+>>> np.ceil(a)
 array([-1., -1., -0.,  1.,  2.,  2.,  2.])  取大
 
- a = np.array([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0])
- np.floor(a)
+>>> a = np.array([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0])
+>>> np.floor(a)
 array([-2., -2., -1.,  0.,  1.,  1.,  2.])取小
 
- a = np.array([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0])
- np.trunc(a)
+>>> a = np.array([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0])
+>>> np.trunc(a)
 array([-1., -1., -0.,  0.,  1.,  1.,  2.]) 截掉小数
 
- a = np.array([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0])
- np.rint(a)
+>>> a = np.array([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0])
+>>> np.rint(a)
 array([-2., -2., -0.,  0.,  2.,  2.,  2.]) 四舍五入
 
 
-
+```
 
 
 
