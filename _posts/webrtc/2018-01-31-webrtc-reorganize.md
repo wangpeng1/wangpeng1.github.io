@@ -22,3 +22,13 @@ https://docs.oracle.com/cd/E55119_01/doc.71/e55126/wd_androidapps.htm#WSEWD496 �
 https://vivekc.xyz/peer-to-peer-video-calling-webrtc-for-android-4132fd0ac54 webrtc 方法使用说明
 
 
+http://blog.csdn.net/w7849516230/article/details/7714552  sip sdp说明
+
+http://download.csdn.net/download/jintu2010/2190546  java sip库
+
+https://github.com/appoorva/SipDemo android sip
+
+
+
+
+
