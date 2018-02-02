@@ -29,6 +29,19 @@ http://download.csdn.net/download/jintu2010/2190546  java sip库
 https://github.com/appoorva/SipDemo android sip
 
 
+## android sip statck
+
+https://stackoverflow.com/questions/25908817/android-ready-jain-sip-library/25914564#25914564  简单库说明
+
+https://github.com/usnistgov/jsip
+
+https://telestax.com/blog/jain-sip-stack-for-android/
+
+https://jsip.ci.cloudbees.com/job/android-jsip/ws/    以上三个都是从第一个引用出来的连接， 最后一个jar是最新的
+
+https://github.com/pankajsewalia01/OiCalls  一个简单的框架使用，调用了上面介绍的库
+
+
 
 
 
