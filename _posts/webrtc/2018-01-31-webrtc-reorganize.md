@@ -52,6 +52,14 @@ http://www.oracle.com/technetwork/java/jain-sip-tutorial-149998.pdf
 
 http://www.oracle.com/technetwork/articles/entarch/introduction-jain-sip-090386.html
 
+## webrtc android
+
+https://qiita.com/nakadoribooks/items/d046fb68d59c7fffbc42  使用wamp.jawampa 连接 然后webrtc
+
+https://www.openwebrtc.org/ 爱立信开源的库
+
+https://medium.com/@silvestr1994/webrtc-on-android-part-1-building-b6982aad4b49 webrtc编译
+
 
 
 
