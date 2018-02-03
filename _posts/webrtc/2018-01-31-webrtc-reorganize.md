@@ -41,6 +41,8 @@ https://jsip.ci.cloudbees.com/job/android-jsip/ws/    以上三个都是从第
 
 https://github.com/pankajsewalia01/OiCalls  一个简单的框架使用，调用了上面介绍的库
 
+https://github.com/umair1112/JainSipClient  jain sip demo
+
 
 ## jain sip 介绍
 
