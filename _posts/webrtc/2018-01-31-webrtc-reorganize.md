@@ -60,6 +60,8 @@ https://www.openwebrtc.org/ 爱立信开源的库
 
 https://medium.com/@silvestr1994/webrtc-on-android-part-1-building-b6982aad4b49 webrtc编译
 
+https://sipjs.com/guides/send-message/
+
 
 
 
