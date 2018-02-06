@@ -28,6 +28,10 @@ http://download.csdn.net/download/jintu2010/2190546  java sip库
 
 https://github.com/appoorva/SipDemo android sip
 
+https://www.cnblogs.com/lingyunhu/p/4058182.html webrtc 描述
+
+https://www.cnblogs.com/fangkm/p/4364553.html 时序图
+
 
 ## android sip statck
 
