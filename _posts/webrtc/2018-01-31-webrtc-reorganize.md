@@ -64,6 +64,7 @@ https://sipjs.com/guides/send-message/
 
 https://github.com/RestComm/restcomm-android-sdk  open source jainsip webrtc
 
+https://github.com/Vinelab/Android-wamp-client wamp依赖的库，编辑好的代码
 
 
 
