@@ -12,3 +12,8 @@ https://github.com/tensorflow/models/tree/master/samples/outreach/blogs 代码�
 
 estimator讲解，数据解析，多个参数的使用
 https://github.com/tensorflow/models/tree/master/samples/core/get_started 
+
+
+https://github.com/jtoy/awesome-tensorflow  列出的新资源
+
+https://github.com/BinRoot/TensorFlow-Book 新书
