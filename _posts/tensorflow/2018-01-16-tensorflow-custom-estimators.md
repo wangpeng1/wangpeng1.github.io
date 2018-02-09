@@ -17,3 +17,5 @@ https://github.com/tensorflow/models/tree/master/samples/core/get_started
 https://github.com/jtoy/awesome-tensorflow  列出的新资源
 
 https://github.com/BinRoot/TensorFlow-Book 新书
+
+https://github.com/Mrgemy95/Tensorflow-Project-Template 代码组织模板
