@@ -56,6 +56,16 @@ http://www.oracle.com/technetwork/java/jain-sip-tutorial-149998.pdf
 
 http://www.oracle.com/technetwork/articles/entarch/introduction-jain-sip-090386.html
 
+https://github.com/umair1112/JainSipClient/blob/master/src/org/uni/illuxplain/sipmessages/Invite.java  解析格式android demo
+
+https://github.com/arslan70/JAIN-SIP-Android/blob/master/src/com/example/sipmessagetest/SipInvite.java 邀请注册 android 带格式
+
+https://github.com/mranga/jain-sip/blob/master/src/examples/parser/Parser.java  jain sip 源码和自带的例子
+
+
+
+
+
 ## webrtc android
 
 https://qiita.com/nakadoribooks/items/d046fb68d59c7fffbc42  使用wamp.jawampa 连接 然后webrtc
