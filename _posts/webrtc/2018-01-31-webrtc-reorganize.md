@@ -81,4 +81,11 @@ https://github.com/RestComm/restcomm-android-sdk  open source jainsip webrtc
 https://github.com/Vinelab/Android-wamp-client wamp依赖的库，编辑好的代码
 
 
+## webrtc 连接
+https://github.com/Piasy/AppRTC-Android
+https://github.com/pchab/AndroidRTC/tree/android-studio/app/src/main/java/fr/pchab/androidrtc
+https://webrtc.googlesource.com/src/+/master/examples/androidapp/src/org/appspot/apprtc/WebSocketRTCClient.java  webrtc 源码编译出来
+
+
+
 
