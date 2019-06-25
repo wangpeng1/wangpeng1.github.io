@@ -111,3 +111,7 @@ https://blog.csdn.net/Zhu__/article/details/78907004
 https://blog.csdn.net/NBA_1/article/details/80172125
 
 https://www.telestax.com/blog/jain-sip-stack-for-android/
+
+## 编译android-libjpeg-turbo
+1.https://github.com/openstf/android-libjpeg-turbo 参考此篇文章，然后修改编译文件，将静态库改成share库 生成so
+2.然后将此库https://github.com/JavaNoober/Light 复制或者替换掉原来的就可以编译最新的arm64-v8a
